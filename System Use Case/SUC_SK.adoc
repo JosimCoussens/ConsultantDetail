@@ -1,0 +1,50 @@
+= Zoeken op Jaren Ervaring in een Skill
+:toc: auto
+
+=== System Use Case (SUC_ZES – Zoeken op Jaren Ervaring in een Skill)
+
+==== Actors
+[underline]#**Salesmedewerker**#
+
+==== Preconditie
+De salesmedewerker is succesvol ingelogd en heeft toegang tot het systeem voor consultantsbeheer.
+
+De salesmedewerker heeft de behoefte om consultants te vinden op basis van specifieke vaardigheden en ervaringsniveau.
+
+==== Basispad
+. Het systeem toont een zoekscherm voor consultants, met de mogelijkheid om te filteren op vaardigheden en jaren ervaring.
+. De salesmedewerker selecteert de gewenste skill (vaardigheid) en voert het minimum aantal jaren ervaring in.
+. Het systeem zoekt in de database naar consultants die voldoen aan de ingevoerde skill- en ervaringseisen.
+. Het systeem toont een lijst van consultants die aan de ervaringseisen voldoen, inclusief hun naam, skill(s), en het aantal jaren ervaring per skill.
+. De salesmedewerker selecteert een consultant om meer details te bekijken.
+. Het systeem toont een gedetailleerd profiel van de geselecteerde consultant, inclusief aanvullende ervaring, beschikbaarheid, en contactinformatie.
+. De salesmedewerker besluit om de zoekopdracht te voltooien en verlaat het zoekscherm.
+
+Het systeem registreert dat de zoekopdracht is voltooid.
+
+De use case eindigt.
+
+==== Postconditie
+Het systeem heeft de resultaten van de zoekopdracht opgeslagen in de logbestanden voor latere referentie.
+
+De salesmedewerker heeft toegang gekregen tot een lijst met geschikte consultants op basis van de skill- en ervaringseisen.
+
+Het systeem reset om de volgende opdracht te kunnen uitvoeren.
+
+==== Exception A: Geen consultants met vereiste ervaring
+1. Het systeem toont een melding dat er geen consultants zijn die voldoen aan de vereiste skill en jaren ervaring.
+
+2. De salesmedewerker kan nieuwe criteria invoeren om de zoekopdracht te verfijnen.
+
+3. De salesmedewerker kan er ook voor kiezen om de zoekopdracht te beëindigen.
+
+De use case eindigt.
+
+==== Exception B: Technische storing tijdens zoekopdracht
+1. Het systeem detecteert een technische storing en kan de zoekopdracht niet uitvoeren.
+
+2. Het systeem toont een foutmelding en biedt de optie om het opnieuw te proberen of de zoekopdracht af te sluiten.
+
+3. De salesmedewerker kiest om de zoekopdracht te beëindigen.
+
+De use case eindigt.

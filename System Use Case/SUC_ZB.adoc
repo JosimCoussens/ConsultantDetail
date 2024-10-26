@@ -1,0 +1,50 @@
+= Filteren op Beschikbaarheid
+:toc: auto 
+
+=== System Use Case (SUC_ZB – Zoeken op Beschikbaarheid)
+
+==== Actors
+Salesmedewerker
+
+==== Preconditie
+De salesmedewerker is succesvol ingelogd en heeft toegang tot het systeem voor consultantsbeheer.
+
+De salesmedewerker heeft behoefte om consultants te vinden op basis van hun beschikbaarheid.
+
+==== Basispad
+. Het systeem toont een zoekscherm voor consultants, met de optie om te filteren op beschikbaarheid.
+. De salesmedewerker selecteert het filter voor beschikbaarheid en kiest de gewenste periode of tijdsduur.
+. Het systeem zoekt in de database naar consultants die beschikbaar zijn binnen de opgegeven periode.
+. Het systeem toont een lijst van consultants die voldoen aan de beschikbaarheidsvereisten, inclusief hun naam en beschikbaarheidsdetails.
+. De salesmedewerker selecteert een consultant om meer details te bekijken.
+. Het systeem toont een gedetailleerd profiel van de geselecteerde consultant, inclusief ervaring, talenkennis, en contactinformatie.
+. De salesmedewerker besluit om de zoekopdracht te voltooien en verlaat het zoekscherm.
+
+Het systeem registreert dat de zoekopdracht is voltooid.
+
+De use case eindigt.
+
+==== Postconditie
+Het systeem heeft de resultaten van de zoekopdracht opgeslagen in de logbestanden voor latere referentie.
+
+De salesmedewerker heeft toegang gekregen tot een lijst met geschikte consultants op basis van de beschikbaarheidsvereisten.
+
+Het systeem reset om de volgende opdracht te kunnen uitvoeren.
+
+==== Exception A: Geen consultants beschikbaar
+1. Het systeem toont een melding dat er geen consultants beschikbaar zijn binnen de opgegeven periode.
+
+2. De salesmedewerker kan een andere periode of tijdsduur invoeren om de zoekopdracht te verfijnen.
+
+3. De salesmedewerker kan er ook voor kiezen om de zoekopdracht te beëindigen.
+
+De use case eindigt.
+
+==== Exception B: Technische storing tijdens filteren
+1. Het systeem detecteert een technische storing en kan de zoekopdracht niet uitvoeren.
+
+2. Het systeem toont een foutmelding en biedt de optie om het opnieuw te proberen of de zoekopdracht af te sluiten.
+
+3. De salesmedewerker kiest om de zoekopdracht te beëindigen.
+
+De use case eindigt.

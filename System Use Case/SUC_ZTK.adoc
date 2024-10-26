@@ -1,0 +1,45 @@
+= Zoeken op Talenkennis
+:toc: auto
+
+=== System Use Case (SUC_ZTK – Zoeken op Talenkennis)
+
+==== Actors
+[underline]#**Salesmedewerker**#
+
+==== Preconditie
+- De salesmedewerker is succesvol ingelogd en heeft toegang tot het systeem voor consultantsbeheer.
+- De salesmedewerker heeft behoefte om consultants te vinden op basis van specifieke taalvaardigheden.
+
+==== Basispad
+. Het systeem toont een zoekscherm voor consultants op basis van talenkennis.
+. De salesmedewerker voert de gewenste taal en het benodigde taalniveau in.
+. Het systeem zoekt in de database naar consultants die voldoen aan de ingevoerde taalvereisten.
+. Het systeem toont een lijst van consultants die aan de zoekcriteria voldoen, inclusief hun naam, talenkennis en niveau per taal.
+. De salesmedewerker selecteert een consultant om meer details te bekijken.
+. Het systeem toont een gedetailleerd profiel van de geselecteerde consultant, inclusief ervaring, beschikbaarheid, en contactinformatie.
+. De salesmedewerker besluit om de zoekopdracht te voltooien en verlaat het zoekscherm.
+
+Het systeem registreert dat de zoekopdracht is voltooid.
+
+De use case eindigt.
+
+==== Postconditie
+Het systeem heeft de resultaten van de zoekopdracht opgeslagen in de logbestanden voor latere referentie.
+
+De salesmedewerker heeft toegang gekregen tot een lijst met geschikte consultants op basis van de taalvereisten.
+
+Het systeem reset om de volgende opdracht te kunnen uitvoeren.
+
+==== Exception A: Geen consultants gevonden
+. Het systeem toont een melding dat er geen consultants zijn gevonden die aan de taalvereisten voldoen.
+. De salesmedewerker kan nieuwe criteria invoeren om de zoekopdracht te verfijnen.
+. De salesmedewerker kan er ook voor kiezen om de zoekopdracht te beëindigen.
+
+De use case eindigt.
+
+==== Exception B: Technische storing tijdens zoekopdracht
+. Het systeem detecteert een technische storing en kan de zoekopdracht niet uitvoeren.
+. Het systeem toont een foutmelding en biedt de optie om het opnieuw te proberen of de zoekopdracht af te sluiten.
+. De salesmedewerker kiest om de zoekopdracht te beëindigen.
+
+De use case eindigt.
