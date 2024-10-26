@@ -1,0 +1,61 @@
+= Aanmaken van een Consultantprofiel
+:toc: auto
+
+== Aanmaken van een Consultantprofiel
+=== System Use Case (SUC_ACP - Aanmaken van een Consultantprofiel)
+
+"Deze system use case beschrijft het proces waarin een unit-teamlid een nieuw consultantprofiel aanmaakt door persoonlijke informatie, werkervaring, skills, opleidingen en talenkennis in te voeren en op te slaan in het systeem."
+
+==== Actors
+* *Unit-teamlid*
+
+==== Preconditions
+- Het unit-teamlid is ingelogd in het systeem.
+- Het systeem is beschikbaar en operationeel.
+
+==== Basispad
+. Het unit-teamlid selecteert de optie “Aanmaken nieuw profiel” in het systeem.
+. Het systeem toont een invoerscherm voor persoonlijke informatie.
+. Het unit-teamlid vult de volgende persoonlijke gegevens in:
+    - Voornaam
+    - Achternaam
+    - Woonplaats en postcode
+    - Geboortedatum
+    - Email (optioneel)
+    - GSM-nummer (optioneel)
+    - Profielfoto (optioneel)
+. Het systeem vraagt om werkervaring/projecten in te voeren, met de volgende details:
+    - Klant- of werkgevernaam (inclusief ervaring vóór de huidige functie)
+    - Naam van het project
+    - Beschrijving van de werkzaamheden
+    - Gebruikte skills
+    - Startdatum en einddatum (einddatum kan optioneel zijn)
+. Het systeem vraagt het unit-teamlid om relevante skills in te voeren of te selecteren, gegroepeerd in vier categorieën:
+    - *Languages & Frameworks* (bijv. .NET, C#)
+    - *Web* (bijv. Blazor, Angular)
+    - *Cloud* (bijv. Azure, App Services)
+    - *Methodologies & Architecture* (bijv. SCRUM, CQRS)
+. Het systeem vraagt om de opleidingen in te voeren:
+    - Naam van instituut
+    - Richting
+    - Start- en eindjaar (eindjaar optioneel)
+    - Certificeringen (optioneel, bijv. Microsoft-certificeringen)
+. Het systeem vraagt om talenkennis toe te voegen, inclusief:
+    - Taal
+    - Taalniveau (score van 1-5)
+. Het unit-teamlid bevestigt de invoer door op “Opslaan” te klikken.
+. Het systeem valideert de gegevens (bijv. formaat van de geboortedatum, overlappende projecten).
+. Het systeem slaat het nieuwe profiel op in de database en bevestigt dat het profiel succesvol is aangemaakt.
+. De use case eindigt.
+
+==== Postcondition
+- Het nieuwe consultantprofiel is succesvol opgeslagen in het systeem en toegankelijk voor het sales- en unit-team.
+
+==== Alternatieve Stroom
+- *Ongeldige gegevens*: Als het unit-teamlid ongeldige gegevens invoert, zoals een ongeldig e-mailadres, geeft het systeem een foutmelding en vraagt om de foutieve gegevens te corrigeren.
+- *Afbreken van het aanmaken*: Als het unit-teamlid het aanmaken wil annuleren, selecteert het de optie “Annuleren”. Het systeem vraagt om bevestiging en sluit het invoerscherm zonder gegevens op te slaan.
+
+==== Scenario
+*Unit-teamlid*: John de Vries
+
+_John de Vries_, een unit-teamlid, logt in op het systeem en selecteert de optie om een nieuw consultantprofiel aan te maken. Hij vult de persoonlijke gegevens in, voegt relevante werkervaring, skills, opleidingen en talenkennis toe, en bevestigt zijn invoer. Het systeem slaat het profiel op, en het nieuwe profiel is nu beschikbaar voor zowel het sales- als unit-team.

@@ -1,0 +1,35 @@
+= Verwijderen van een Consultantprofiel
+:toc: auto
+
+== Verwijderen van een Consultantprofiel
+=== System Use Case (SUC_VCP - Verwijderen van een Consultantprofiel)
+
+"Deze system use case beschrijft het proces waarin een unit-teamlid een bestaand consultantprofiel permanent verwijdert uit het systeem, inclusief alle bijbehorende informatie."
+
+==== Actors
+* *Unit-teamlid*
+
+==== Preconditions
+- Het unit-teamlid is ingelogd in het systeem.
+- Het systeem is beschikbaar en operationeel.
+- Het consultantprofiel dat verwijderd moet worden, bestaat in de database.
+
+==== Basispad
+. Het unit-teamlid selecteert de optie “Verwijderen van profiel” in het systeem.
+. Het systeem toont een lijst van bestaande profielen, en het unit-teamlid selecteert het profiel dat verwijderd moet worden.
+. Het systeem vraagt om bevestiging voor het verwijderen van het profiel en toont een waarschuwing dat deze actie onomkeerbaar is.
+. Het unit-teamlid bevestigt de verwijdering.
+. Het systeem verwijdert het profiel en alle bijbehorende informatie permanent uit de database.
+. Het systeem bevestigt dat het profiel succesvol is verwijderd.
+. De use case eindigt.
+
+==== Postcondition
+- Het consultantprofiel is permanent verwijderd uit het systeem en niet langer toegankelijk voor het sales- of unit-team.
+
+==== Alternatieve Stroom
+- *Annuleren van de verwijdering*: Als het unit-teamlid besluit de verwijdering te annuleren, selecteert het de optie “Annuleren” bij de bevestigingsstap. Het systeem sluit het verwijderingsproces en behoudt het profiel in de database.
+
+==== Scenario
+*Unit-teamlid*: John de Vries
+
+_John de Vries_, een unit-teamlid, logt in op het systeem en selecteert de optie om een consultantprofiel te verwijderen. Hij kiest het profiel dat hij wil verwijderen en bevestigt de actie, nadat hij een waarschuwing heeft gezien over de onomkeerbaarheid van deze actie. Het systeem verwijdert het profiel permanent en bevestigt de succesvolle verwijdering.

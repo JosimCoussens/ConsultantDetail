@@ -1,0 +1,52 @@
+= Bewerken van een Consultantprofiel
+:toc: auto
+
+== Bewerken van een Consultantprofiel
+=== System Use Case (SUC_BCP - Bewerken van een Consultantprofiel)
+
+"Deze system use case beschrijft het proces waarin een unit-teamlid een bestaand consultantprofiel bijwerkt door persoonlijke informatie, werkervaring, skills, opleidingen en talenkennis aan te passen en op te slaan in het systeem."
+
+==== Actors
+* *Unit-teamlid*
+
+==== Preconditions
+- Het unit-teamlid is ingelogd in het systeem.
+- Het systeem is beschikbaar en operationeel.
+- Het consultantprofiel dat bewerkt moet worden, is al aanwezig in de database.
+
+==== Basispad
+. Het unit-teamlid selecteert de optie “Bewerken van profiel” in het systeem.
+. Het systeem toont een lijst van bestaande profielen, en het unit-teamlid selecteert het profiel dat bewerkt moet worden.
+. Het systeem opent het profiel en toont alle bestaande gegevens:
+    - Persoonlijke informatie
+    - Werkervaring/projecten
+    - Skills
+    - Opleidingen
+    - Talenkennis
+. Het unit-teamlid kan de gewenste wijzigingen aanbrengen in de volgende secties:
+    . **Persoonlijke Informatie**
+       - Velden: Voornaam, Achternaam, Woonplaats, Postcode, Geboortedatum, Email (optioneel), GSM-nummer (optioneel), Profielfoto (optioneel)
+    . **Werkervaring/Projecten**
+       - Velden: Klant- of werkgevernaam, Projectnaam, Beschrijving van werkzaamheden, Gebruikte skills, Start- en einddatum (einddatum optioneel)
+    . **Skills** (gecategoriseerd)
+       - Categorieën: *Languages & Frameworks*, *Web*, *Cloud*, *Methodologies & Architecture*
+    . **Opleidingen**
+       - Velden: Instituut, Richting, Start- en eindjaar (eindjaar optioneel), Certificeringen (optioneel)
+    . **Talenkennis**
+       - Velden: Taal, Taalniveau (score van 1-5)
+. Het unit-teamlid bevestigt de wijzigingen door op “Opslaan” te klikken.
+. Het systeem valideert de ingevoerde gegevens (bijv. overlappende projecten, correcte data-indelingen).
+. Het systeem slaat de bewerkte gegevens op in de database en bevestigt dat het profiel succesvol is bijgewerkt.
+. De use case eindigt.
+
+==== Postcondition
+- Het consultantprofiel is succesvol bijgewerkt in het systeem en de wijzigingen zijn toegankelijk voor het sales- en unit-team.
+
+==== Alternatieve Stroom
+- *Ongeldige gegevens*: Als het unit-teamlid ongeldige gegevens invoert, zoals overlappende projectdata of een ongeldig e-mailadres, geeft het systeem een foutmelding en vraagt om de foutieve gegevens te corrigeren.
+- *Afbreken van het bewerken*: Als het unit-teamlid het bewerken wil annuleren, selecteert het de optie “Annuleren”. Het systeem vraagt om bevestiging en sluit het profiel zonder wijzigingen op te slaan.
+
+==== Scenario
+*Unit-teamlid*: John de Vries
+
+_John de Vries_, een unit-teamlid, logt in op het systeem en selecteert een bestaand consultantprofiel om aan te passen. Hij wijzigt de persoonlijke gegevens, past werkervaring, skills, opleidingen en talenkennis aan, en bevestigt zijn invoer. Het systeem slaat de wijzigingen op, en het bijgewerkte profiel is nu beschikbaar voor zowel het sales- als unit-team.
