@@ -1,0 +1,19 @@
+= Zoeken op Talenkennis
+
+Als salesmedewerker  
+wil ik consultants kunnen zoeken op basis van hun talenkennis en taalniveaus  
+zodat ik gemakkelijk geschikte consultants kan vinden voor specifieke taalvereisten.
+
+== Acceptatiecriteria
+
+- De salesmedewerker kan de optie "Zoeken op talenkennis" selecteren, waarna het systeem een zoekscherm toont.
+- Het systeem biedt invoervelden voor:
+  * De gewenste taal.
+  * Het minimale taalniveau voor deze taal.
+- Het systeem valideert de invoer en controleert dat een geldige taal en niveau zijn ingevuld.
+- Na bevestiging van de zoekopdracht door de salesmedewerker zoekt het systeem naar consultants die aan de ingevoerde taalvereisten voldoen.
+- Het systeem toont een lijst met consultants die voldoen aan de taalcriteria, inclusief hun naam, talenkennis en taalniveau.
+- De salesmedewerker kan het profiel van een consultant selecteren voor meer details.
+- Indien geen consultants voldoen aan de zoekcriteria, toont het systeem een melding en biedt het de optie om de criteria aan te passen.
+- Bij een technische storing toont het systeem een foutmelding en biedt het de optie om de zoekopdracht te herhalen of te annuleren.
+- De salesmedewerker kan het zoekproces op elk moment annuleren, waarbij geen wijzigingen worden opgeslagen.

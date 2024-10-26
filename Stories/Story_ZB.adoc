@@ -1,0 +1,18 @@
+= Filteren op Beschikbaarheid
+
+Als salesmedewerker  
+wil ik consultants kunnen filteren op basis van hun beschikbaarheid  
+zodat ik snel consultants kan vinden die beschikbaar zijn binnen de gewenste periode.
+
+== Acceptatiecriteria
+
+- De salesmedewerker kan de optie "Filteren op beschikbaarheid" selecteren, waarna het systeem een zoekscherm toont.
+- Het systeem biedt invoervelden voor:
+  * De gewenste periode of tijdsduur voor beschikbaarheid.
+- Het systeem valideert de invoer en controleert dat een geldige periode of tijdsduur is ingevuld.
+- Na bevestiging van de zoekopdracht door de salesmedewerker zoekt het systeem naar consultants die binnen de ingevoerde beschikbaarheidscriteria vallen.
+- Het systeem toont een lijst van consultants die aan de beschikbaarheidsvereisten voldoen, inclusief hun naam en beschikbaarheidsinformatie.
+- De salesmedewerker kan het profiel van een consultant selecteren voor meer details.
+- Indien geen consultants voldoen aan de zoekcriteria, toont het systeem een melding en biedt het de optie om de criteria aan te passen.
+- Bij een technische storing toont het systeem een foutmelding en biedt het de optie om de zoekopdracht te herhalen of te annuleren.
+- De salesmedewerker kan het zoekproces op elk moment annuleren, waarbij geen wijzigingen worden opgeslagen.

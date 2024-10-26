@@ -1,0 +1,18 @@
+== Zoeken op Jaren Ervaring in een Skill
+
+Als salesmedewerker  
+wil ik consultants kunnen zoeken op basis van hun jaren ervaring in specifieke vaardigheden (skills)  
+zodat ik snel consultants kan vinden die voldoen aan de vereiste ervaringsniveaus voor een bepaalde skill.
+
+=== Acceptatiecriteria
+- De salesmedewerker kan de optie "Zoeken op skill en ervaring" selecteren, waarna het systeem een zoekscherm toont.
+- Het systeem biedt invoervelden voor:
+* De naam van de gewenste skill.
+* Het minimum aantal jaren ervaring voor deze skill.
+- Het systeem valideert de invoer en controleert dat een geldige skill en ervaringsniveau zijn ingevuld.
+- Na bevestiging van de zoekopdracht door de salesmedewerker zoekt het systeem naar consultants die aan de ingevoerde criteria voldoen.
+- Het systeem toont een lijst met consultants die voldoen aan de skill- en ervaringseisen, inclusief hun naam, de geselecteerde skill, en hun jaren ervaring in die skill.
+- De salesmedewerker kan het profiel van een consultant selecteren voor meer details.
+- Indien geen consultants voldoen aan de zoekcriteria, toont het systeem een melding en biedt het de optie om de criteria aan te passen.
+- Bij een technische storing toont het systeem een foutmelding en biedt het de optie om de zoekopdracht te herhalen of te annuleren.
+- De salesmedewerker kan het zoekproces op elk moment annuleren, waarbij geen wijzigingen worden opgeslagen.
