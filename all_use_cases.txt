@@ -1,0 +1,98 @@
+AllPhi Consultant Management Applicatie - Use Cases
+===================================================
+
+1. Beheer van Consultantgegevens
+-------------------------------
+
+  UC1.1: Aanmaken van een consultantprofiel
+    - Doel: Toevoegen van nieuw profiel met persoonlijke info, ervaring, skills, etc.
+    - Actie: Unit-teamlid vult gegevens in om profiel te creëren.
+    - Resultaat: Nieuw profiel is opgeslagen en toegankelijk voor sales- en unit-teams.
+
+  UC1.2: Bewerken van een consultantprofiel
+    - Doel: Updaten van gegevens zoals nieuwe skills, projecten, opleidingen.
+    - Actie: Unit-teamlid past profiel aan.
+    - Resultaat: Gewijzigd profiel is zichtbaar voor sales- en unit-teams.
+
+  UC1.3: Verwijderen van een consultantprofiel
+    - Doel: Verwijderen van niet-actieve profielen.
+    - Actie: Unit-teamlid verwijdert profiel.
+    - Resultaat: Profiel is niet meer toegankelijk voor sales- of unit-teams.
+
+  UC1.4: Beheer van skills en categorieën
+    - Doel: Skills en categorieën toevoegen, wijzigen, of verwijderen.
+    - Actie: Beheerder voegt nieuwe skill/categorie toe.
+    - Resultaat: Skills en categorieën zijn up-to-date.
+
+  UC1.5: Toevoegen van certificeringen aan een profiel
+    - Doel: Certificeringen registreren (bijv. Microsoft-certificering).
+    - Actie: Unit-teamlid voegt certificering toe.
+    - Resultaat: Certificering zichtbaar in profiel voor betere matching.
+
+
+2. Vinden van Consultants (Matching)
+------------------------------------
+
+  UC2.1: Zoeken op basis van vaardigheden
+    - Doel: Sales-team zoekt consultants met specifieke skills.
+    - Actie: Sales kiest skills en ervaringseisen.
+    - Resultaat: Lijst met geschikte consultants.
+
+  UC2.2: Zoeken op talenkennis
+    - Doel: Consultants vinden op basis van talenkennis.
+    - Actie: Sales voert taal en niveau in.
+    - Resultaat: Consultants die voldoen aan taalvereisten.
+
+  UC2.3: Filteren op beschikbaarheid
+    - Doel: Beschikbare consultants zoeken.
+    - Actie: Sales selecteert beschikbaarheidsfilter.
+    - Resultaat: Enkel beschikbare consultants worden getoond.
+
+  UC2.4: Zoeken op jaren ervaring in een skill
+    - Doel: Consultants zoeken met min. aantal jaren ervaring in een skill.
+    - Actie: Sales kiest skill en gewenst ervaringsniveau.
+    - Resultaat: Consultants die voldoen aan de ervaringseis.
+
+  UC2.5: Geografisch zoeken op woonplaats
+    - Doel: Consultants zoeken op basis van woonplaats.
+    - Actie: Sales activeert kaartweergave.
+    - Resultaat: Kaart toont consultants op locatie.
+
+
+3. Raadplegen van een Consultantprofiel
+---------------------------------------
+
+  UC3.1: Bekijken van een volledig consultantprofiel
+    - Doel: Unit- of sales-team bekijkt volledige informatie van consultant.
+    - Actie: Teamlid opent profiel.
+    - Resultaat: Volledig profiel zichtbaar, incl. persoonlijke gegevens, ervaring, skills.
+
+  UC3.2: Weergeven van skill-ervaring op een radargraph
+    - Doel: Visueel overzicht van belangrijkste skills en ervaringsniveau's.
+    - Actie: Profiel wordt bekeken; radargraph toont vaardigheden.
+    - Resultaat: Visuele samenvatting van core skills per categorie.
+
+
+4. Genereren van een CV
+-----------------------
+
+  UC4.1: Exporteren van een profiel naar PDF
+    - Doel: Consultantprofiel omzetten naar PDF-CV.
+    - Actie: Sales klikt op ‘Exporteren als CV’.
+    - Resultaat: PDF wordt gegenereerd zonder radargraph.
+
+
+5. Authenticatie en Beveiliging
+-------------------------------
+
+  UC5.1: Inloggen in de applicatie
+    - Doel: Enkel geautoriseerde toegang tot de applicatie.
+    - Actie: Gebruiker logt in met inloggegevens.
+    - Resultaat: Na succesvolle login krijgt gebruiker toegang.
+
+  UC5.2: Rollenbeheer voor gebruikers
+    - Doel: Toegang op basis van rol (sales, unit-teamlid, beheerder).
+    - Actie: Rol wordt gecontroleerd bij inloggen.
+    - Resultaat: Toegang tot functies op basis van gebruikersrol.
+
+====================================================
