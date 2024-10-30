@@ -1,0 +1,35 @@
+= Rollenbeheer voor Gebruikers
+:toc: auto
+
+== Rollenbeheer voor Gebruikers
+=== Use Case (UC5.2 - Rollenbeheer voor gebruikers)
+
+"Deze use case beschrijft het proces waarmee de applicatie gebruikers toegang verleent tot specifieke functionaliteiten op basis van hun rol, zoals sales, unit-teamlid of beheerder. Dit proces helpt bij het beperken van toegang tot bepaalde functies op basis van autorisatieniveau."
+
+=== Doel
+- Toegang op basis van rol (sales, unit-teamlid, beheerder).
+
+=== Actors
+**[underline]##Gebruiker##**
+
+=== Precondities
+- De gebruiker beschikt over geldige inloggegevens en een toegewezen rol binnen het systeem.
+- Het systeem ondersteunt verschillende toegangsrechten per gebruikersrol.
+
+=== Basispad
+1. De gebruiker logt in op de applicatie (zie UC5.1).
+2. Het systeem verifieert de gebruikersrol (bijvoorbeeld sales, unit-teamlid of beheerder).
+3. Het systeem verleent toegang tot functionaliteiten op basis van de vastgestelde rol.
+4. De gebruiker kan nu alleen de functies gebruiken die passen bij zijn/haar rol.
+5. De use case eindigt.
+
+=== Postconditie
+- De gebruiker heeft toegang tot de functies die horen bij zijn/haar rol in de applicatie.
+
+=== Alternatieve Stroom
+- Indien de rol van de gebruiker niet kan worden vastgesteld, toont het systeem een foutmelding en blokkeert verdere toegang tot functies.
+
+=== Scenario
+- Gebruiker: Lisa Vermeer (rol: Beheerder)
+
+Lisa Vermeer, een beheerder, logt in op de applicatie. Het systeem verifieert haar rol en verleent toegang tot beheerdersfunctionaliteiten, zoals gebruikersbeheer en rapportage.

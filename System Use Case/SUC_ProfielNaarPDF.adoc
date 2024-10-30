@@ -1,0 +1,33 @@
+= Genereren van CV
+:toc: auto
+
+== Genereren van CV
+=== Business Use Case (BUC_GCV - Genereren van CV)
+
+"Deze business use case beschrijft het proces waarmee een consultantprofiel in het systeem omgezet kan worden naar een CV in PDF-formaat. Dit proces stelt de Sales-afdeling in staat om gemakkelijk een deelbaar CV-document van een consultant te genereren, zonder bepaalde visuele elementen zoals de radar, voor presentatie aan klanten."
+
+=== Actors
+**[underline]##Sales Medewerker##**
+
+=== Precondities
+- De Consultant Database bevat actuele gegevens over de expertise, ervaring en opleidingen van consultants.
+- De Sales Medewerker heeft toegang tot de functionaliteit voor het genereren van CV’s in het systeem.
+
+=== Basispad
+1. De Sales Medewerker opent de functionaliteit voor het genereren van een CV in het systeem.
+2. De Sales Medewerker selecteert de consultant waarvan het profiel omgezet moet worden naar een CV.
+3. Het systeem verzamelt alle relevante gegevens van de geselecteerde consultant uit de database.
+4. Het systeem genereert een CV in PDF-formaat met alle geselecteerde gegevens, exclusief de visuele elementen zoals de radar.
+5. Het systeem stelt de PDF beschikbaar voor download of opslaan door de Sales Medewerker.
+6. De use case eindigt.
+
+=== Postconditie
+- De Sales Medewerker heeft een downloadbaar CV in PDF-formaat van de geselecteerde consultant, klaar om te delen met klanten.
+
+=== Alternatieve Stroom
+- Indien het profiel van de consultant niet volledig is (bijvoorbeeld ontbrekende gegevens), toont het systeem een melding met de optie om het profiel eerst aan te vullen.
+
+=== Scenario
+- Sales Medewerker: Katia Persoons
+
+Katia Persoons, een Sales Medewerker, opent op dinsdagochtend de functionaliteit voor het genereren van een CV om een consultant aan te bevelen aan een klant. Ze selecteert het profiel van een consultant en laat het systeem de gegevens ophalen en een PDF genereren. Het gegenereerde CV, zonder de radar, is gereed en Katia slaat het bestand op om naar de klant te sturen.

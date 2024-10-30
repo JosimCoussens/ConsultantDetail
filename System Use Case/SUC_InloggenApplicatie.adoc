@@ -1,0 +1,35 @@
+= Authenticatie en Beveiliging
+:toc: auto
+
+== Inloggen in de Applicatie
+=== Use Case (UC5.1 - Inloggen in de applicatie)
+
+"Deze use case beschrijft het proces waarmee gebruikers kunnen inloggen in de applicatie om toegang te krijgen tot beveiligde functionaliteiten. Het doel is om enkel geautoriseerde gebruikers toegang te verlenen."
+
+=== Doel
+- Enkel geautoriseerde toegang tot de applicatie.
+
+=== Actors
+**[underline]##Gebruiker##**
+
+=== Precondities
+- De gebruiker beschikt over geldige inloggegevens (gebruikersnaam en wachtwoord).
+- De applicatie is toegankelijk en de inlogfunctionaliteit is beschikbaar.
+
+=== Basispad
+1. De gebruiker opent de applicatie en navigeert naar het inlogscherm.
+2. De gebruiker voert zijn/haar gebruikersnaam en wachtwoord in.
+3. Het systeem valideert de ingevoerde inloggegevens.
+4. Indien de inloggegevens correct zijn, krijgt de gebruiker toegang tot de applicatie.
+5. De use case eindigt.
+
+=== Postconditie
+- De gebruiker heeft succesvolle toegang tot de applicatie en kan beveiligde functionaliteiten gebruiken.
+
+=== Alternatieve Stroom
+- Indien de inloggegevens onjuist zijn, toont het systeem een foutmelding en biedt het de mogelijkheid om opnieuw in te loggen.
+
+=== Scenario
+- Gebruiker: Jan de Vries
+
+Jan de Vries opent de applicatie en voert zijn gebruikersnaam en wachtwoord in om in te loggen. Na een succesvolle inlogpoging krijgt hij toegang tot de beveiligde secties van de applicatie.
