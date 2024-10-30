@@ -1,0 +1,35 @@
+= Bekijken van een Volledig Consultantprofiel
+:toc: auto
+
+== Bekijken van een Volledig Consultantprofiel
+=== Use Case (UC3.1 - Bekijken van een volledig consultantprofiel)
+
+"Deze use case beschrijft het proces waarmee een unit- of sales-teamlid het volledige profiel van een consultant kan bekijken. Dit omvat persoonlijke gegevens, ervaring en vaardigheden, en helpt bij het maken van een weloverwogen selectie voor projecten of klantverzoeken."
+
+=== Doel
+- Unit- of sales-team bekijkt volledige informatie van consultant.
+
+=== Actors
+**[underline]##Unit-Teamlid##**, **[underline]##Sales Medewerker##**
+
+=== Precondities
+- De Consultant Database bevat actuele en volledige profielinformatie van de consultant.
+- Het teamlid heeft toegang tot de profielweergave-functionaliteit in het systeem.
+
+=== Basispad
+1. Het teamlid navigeert naar de lijst met consultants en selecteert het gewenste consultantprofiel.
+2. Het teamlid opent het profiel van de consultant.
+3. Het systeem toont het volledige profiel van de consultant, inclusief persoonlijke gegevens, werkervaring en skills.
+4. Het teamlid bekijkt de benodigde informatie in het profiel.
+5. De use case eindigt.
+
+=== Postconditie
+- Het teamlid heeft volledig inzicht in de persoonlijke en professionele gegevens van de geselecteerde consultant.
+
+=== Alternatieve Stroom
+- Indien het profiel niet volledig is ingevuld, geeft het systeem een melding met informatie over ontbrekende velden.
+
+=== Scenario
+- Unit-Teamlid: Emma de Jong
+
+Emma de Jong, een unit-teamlid, navigeert naar het consultantscherm om het profiel van een consultant te bekijken. Ze opent het profiel en ziet uitgebreide informatie over de consultant, zoals werkervaring en vaardigheden. Emma gebruikt deze informatie om te bepalen of de consultant geschikt is voor een specifiek project.

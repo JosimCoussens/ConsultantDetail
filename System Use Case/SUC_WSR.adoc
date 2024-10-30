@@ -1,0 +1,35 @@
+= Weergeven van Skill-Ervaring op een Radargraph
+:toc: auto
+
+== Weergeven van Skill-Ervaring op een Radargraph
+=== Use Case (UC3.2 - Weergeven van skill-ervaring op een radargraph)
+
+"Deze use case beschrijft het proces waarmee de applicatie een visueel overzicht biedt van de belangrijkste skills en ervaringsniveaus van een consultant door middel van een radargraph. Dit helpt teamleden om snel inzicht te krijgen in de sterke punten van een consultant per skillcategorie."
+
+=== Doel
+- Visueel overzicht van belangrijkste skills en ervaringsniveau's.
+
+=== Actors
+**[underline]##Unit-Teamlid##**, **[underline]##Sales Medewerker##**
+
+=== Precondities
+- De consultantprofielen bevatten gegevens over skills en ervaringsniveaus per skill.
+- Het systeem ondersteunt de radargraph-functionaliteit om deze gegevens visueel weer te geven.
+
+=== Basispad
+1. Het teamlid opent het profiel van een consultant.
+2. Het systeem genereert automatisch een radargraph op basis van de beschikbare skill- en ervaringsgegevens van de consultant.
+3. De radargraph wordt weergegeven als onderdeel van het profiel.
+4. Het teamlid bekijkt de visuele samenvatting van de core skills van de consultant.
+5. De use case eindigt.
+
+=== Postconditie
+- Het teamlid heeft een visueel overzicht van de belangrijkste skills en ervaringsniveaus van de consultant.
+
+=== Alternatieve Stroom
+- Indien onvoldoende gegevens beschikbaar zijn om een radargraph te genereren, toont het systeem een melding en stelt het een standaardweergave van de skills voor.
+
+=== Scenario
+- Unit-Teamlid: Lisa Vermeer
+
+Lisa Vermeer, een unit-teamlid, opent het profiel van een consultant om snel inzicht te krijgen in diens vaardigheden. Het systeem toont een radargraph die de belangrijkste skills en ervaringsniveaus per categorie weergeeft. Lisa kan zo snel de kernvaardigheden van de consultant beoordelen.

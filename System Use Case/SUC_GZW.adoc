@@ -1,0 +1,36 @@
+= Geografisch Zoeken op Woonplaats
+:toc: auto
+
+== Geografisch Zoeken op Woonplaats
+=== Use Case (UC2.5 - Geografisch zoeken op woonplaats)
+
+"Deze use case beschrijft het proces waarmee de Sales-afdeling consultants kan zoeken op basis van hun woonplaats door een kaartweergave te activeren. Dit helpt bij het vinden van consultants die geografisch dicht bij een specifieke locatie wonen."
+
+=== Doel
+- Consultants zoeken op basis van woonplaats.
+
+=== Actors
+**[underline]##Sales Medewerker##**
+
+=== Precondities
+- De Consultant Database bevat actuele gegevens over de woonplaatsen van consultants.
+- De Sales Medewerker heeft toegang tot de kaartweergave-functionaliteit.
+
+=== Basispad
+1. De Sales Medewerker opent de kaartweergave-functionaliteit in het systeem.
+2. De Sales Medewerker voert de gewenste locatie of woonplaats in als zoekcriterium.
+3. Het systeem zoekt in de Consultant Database naar consultants die binnen de opgegeven locatie vallen.
+4. Het systeem toont de consultants op de kaart op basis van hun woonplaats.
+5. De Sales Medewerker kan individuele consultants selecteren vanuit de kaartweergave voor verdere details.
+6. De use case eindigt.
+
+=== Postconditie
+- De Sales Medewerker ziet een kaart met de consultants die voldoen aan de locatiecriteria.
+
+=== Alternatieve Stroom
+- Indien er geen consultants zijn binnen de opgegeven locatie, toont het systeem een melding en biedt de mogelijkheid om het zoekgebied aan te passen.
+
+=== Scenario
+- Sales Medewerker: Tom Bakker
+
+Tom Bakker, een Sales Medewerker, opent de kaartweergave in de applicatie om consultants te zoeken die in of nabij Amsterdam wonen. Hij voert "Amsterdam" in als zoekcriteria, en het systeem toont de consultants op de kaart. Tom selecteert de consultants die geografisch het dichtst bij het project zijn gelegen.
